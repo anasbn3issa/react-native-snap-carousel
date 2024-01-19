@@ -1,24 +1,8 @@
 import React, { PureComponent } from 'react';
 import { View, Animated, Easing, TouchableOpacity } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './Pagination.style';
 
 export default class PaginationDot extends PureComponent {
-
-    static propTypes = {
-        inactiveOpacity: PropTypes.number.isRequired,
-        inactiveScale: PropTypes.number.isRequired,
-        active: PropTypes.bool,
-        activeOpacity: PropTypes.number,
-        carouselRef: PropTypes.object,
-        color: PropTypes.string,
-        containerStyle: View.propTypes.style,
-        inactiveColor: PropTypes.string,
-        inactiveStyle: View.propTypes.style,
-        index: PropTypes.number,
-        style: View.propTypes.style,
-        tappable: PropTypes.bool
-    };
 
     constructor (props) {
         super(props);
